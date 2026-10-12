@@ -1,0 +1,321 @@
+{
+  "$defs": {
+    "EvidenceHash": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Canonical Sha256",
+          "type": "string"
+        },
+        "event_id": {
+          "format": "uuid",
+          "title": "Event Id",
+          "type": "string"
+        },
+        "file_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "File Sha256",
+          "type": "string"
+        },
+        "raw_row_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Raw Row Sha256",
+          "type": "string"
+        },
+        "row_index": {
+          "maximum": 5000,
+          "minimum": 1,
+          "title": "Row Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "event_id",
+        "canonical_sha256",
+        "raw_row_sha256",
+        "file_sha256",
+        "row_index"
+      ],
+      "title": "EvidenceHash",
+      "type": "object"
+    },
+    "FactView": {
+      "additionalProperties": false,
+      "properties": {
+        "distinct_users": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Distinct Users"
+        },
+        "end_at": {
+          "format": "date-time",
+          "title": "End At",
+          "type": "string"
+        },
+        "event_code": {
+          "anyOf": [
+            {
+              "enum": [
+                4624,
+                4625,
+                4688,
+                3
+              ],
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Event Code"
+        },
+        "event_count": {
+          "title": "Event Count",
+          "type": "integer"
+        },
+        "fact_id": {
+          "format": "uuid",
+          "title": "Fact Id",
+          "type": "string"
+        },
+        "host_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Host Id"
+        },
+        "input_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Input Hash",
+          "type": "string"
+        },
+        "predicate": {
+          "enum": [
+            "observed_event",
+            "failed_login_burst",
+            "multi_account_failures",
+            "source_account_failures",
+            "success_after_failures",
+            "windows_image_match"
+          ],
+          "title": "Predicate",
+          "type": "string"
+        },
+        "priority": {
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "title": "Priority",
+          "type": "integer"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "rule_version": {
+          "title": "Rule Version",
+          "type": "string"
+        },
+        "source_event_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "title": "Source Event Ids",
+          "type": "array"
+        },
+        "source_proof_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Source Proof Sha256",
+          "type": "string"
+        },
+        "start_at": {
+          "format": "date-time",
+          "title": "Start At",
+          "type": "string"
+        },
+        "user_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "User Id"
+        }
+      },
+      "required": [
+        "fact_id",
+        "predicate",
+        "rule_id",
+        "rule_version",
+        "priority",
+        "start_at",
+        "end_at",
+        "event_count",
+        "event_code",
+        "distinct_users",
+        "host_id",
+        "user_id",
+        "source_event_ids",
+        "source_proof_sha256",
+        "input_hash"
+      ],
+      "title": "FactView",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "format": "uuid",
+      "title": "Case Id",
+      "type": "string"
+    },
+    "confidence_or_abstention_reason": {
+      "default": [],
+      "items": {
+        "enum": [
+          "no_signal",
+          "insufficient_evidence",
+          "verifier_rejected",
+          "context_truncated",
+          "model_uncertainty",
+          "provider_failure",
+          "invalid_selection",
+          "budget_exceeded"
+        ],
+        "type": "string"
+      },
+      "title": "Confidence Or Abstention Reason",
+      "type": "array"
+    },
+    "incident_verdict": {
+      "const": "needs_review",
+      "default": "needs_review",
+      "title": "Incident Verdict",
+      "type": "string"
+    },
+    "input_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Input Hash"
+    },
+    "interpretation_status": {
+      "const": "unverified_analyst_text",
+      "default": "unverified_analyst_text",
+      "title": "Interpretation Status",
+      "type": "string"
+    },
+    "limitations": {
+      "default": [
+        "Verified facts do not establish source authenticity or malicious intent.",
+        "No independently calibrated automatic incident-confirmation policy is available."
+      ],
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "missing_evidence": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing Evidence",
+      "type": "array"
+    },
+    "pipeline": {
+      "const": "B3-hybrid-v0.4",
+      "default": "B3-hybrid-v0.4",
+      "title": "Pipeline",
+      "type": "string"
+    },
+    "recommended_review": {
+      "default": "Review authorization, account context and original telemetry.",
+      "title": "Recommended Review",
+      "type": "string"
+    },
+    "retrieval_calls": {
+      "default": 0,
+      "title": "Retrieval Calls",
+      "type": "integer"
+    },
+    "risk_assessment": {
+      "default": "insufficient_evidence",
+      "enum": [
+        "suspicious",
+        "insufficient_evidence"
+      ],
+      "title": "Risk Assessment",
+      "type": "string"
+    },
+    "risk_interpretation": {
+      "default": "",
+      "title": "Risk Interpretation",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "evidence-report-1.0",
+      "default": "evidence-report-1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "selected_fact_count": {
+      "default": 0,
+      "title": "Selected Fact Count",
+      "type": "integer"
+    },
+    "source_proofs": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/EvidenceHash"
+      },
+      "title": "Source Proofs",
+      "type": "array"
+    },
+    "tenant_id": {
+      "format": "uuid",
+      "title": "Tenant Id",
+      "type": "string"
+    },
+    "verified_observations": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/FactView"
+      },
+      "title": "Verified Observations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "case_id",
+    "tenant_id"
+  ],
+  "title": "EvidenceReport",
+  "type": "object"
+}

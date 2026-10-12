@@ -1,0 +1,16 @@
+schema_version: '1.0'
+seed: 20261011
+fixture: fixtures/demo/events.jsonl
+labels: fixtures/demo/cases.jsonl
+evidence: fixtures/demo/expected_evidence.jsonl
+arms: [B0, B1, B2, B3]
+ablations: [minus-verifier, minus-evidence-selection, minus-abstention, minus-correlation]
+partition: all
+budget:
+  max_input_tokens: 16384
+  max_output_tokens: 2048
+  max_tool_calls: 8
+  max_model_calls: 2
+  max_seconds: 10
+  max_usd: 0
+split_manifest: config/splits-smoke.json

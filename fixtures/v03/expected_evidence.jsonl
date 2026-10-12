@@ -1,0 +1,120 @@
+{"scenario_id": "v03-001", "supporting_rows": [1, 2, 3, 4, 5, 6, 7]}
+{"scenario_id": "v03-002", "supporting_rows": [20, 22, 24, 26, 27, 32, 35]}
+{"scenario_id": "v03-003", "supporting_rows": [37, 38, 39, 40, 41, 42, 43]}
+{"scenario_id": "v03-004", "supporting_rows": [55, 57, 58, 60, 64, 68, 72]}
+{"scenario_id": "v03-005", "supporting_rows": [73, 74, 75, 76, 77, 78, 79]}
+{"scenario_id": "v03-006", "supporting_rows": [94, 95, 97, 98, 103, 105, 107]}
+{"scenario_id": "v03-007", "supporting_rows": [109, 110, 111, 112, 113, 114, 115]}
+{"scenario_id": "v03-008", "supporting_rows": [128, 135, 136, 137, 139, 142, 143]}
+{"scenario_id": "v03-009", "supporting_rows": [145, 146, 147, 148, 149, 150, 151]}
+{"scenario_id": "v03-010", "supporting_rows": [163, 164, 167, 172, 175, 177, 178]}
+{"scenario_id": "v03-011", "supporting_rows": [181, 182, 183, 184, 185, 186, 187]}
+{"scenario_id": "v03-012", "supporting_rows": [201, 202, 206, 208, 211, 212, 214]}
+{"scenario_id": "v03-013", "supporting_rows": [217, 218, 219, 220, 221, 222]}
+{"scenario_id": "v03-014", "supporting_rows": [236, 237, 238, 242, 244, 249]}
+{"scenario_id": "v03-015", "supporting_rows": [253, 254, 255, 256, 257, 258]}
+{"scenario_id": "v03-016", "supporting_rows": [271, 275, 279, 285, 287, 288]}
+{"scenario_id": "v03-017", "supporting_rows": [289, 290, 291, 292, 293, 294]}
+{"scenario_id": "v03-018", "supporting_rows": [308, 309, 314, 317, 318, 320]}
+{"scenario_id": "v03-019", "supporting_rows": [325, 326, 327, 328]}
+{"scenario_id": "v03-020", "supporting_rows": [350, 354, 355, 357]}
+{"scenario_id": "v03-021", "supporting_rows": [361, 362, 363, 364]}
+{"scenario_id": "v03-022", "supporting_rows": [381, 382, 384, 392]}
+{"scenario_id": "v03-023", "supporting_rows": [397, 398, 399, 400]}
+{"scenario_id": "v03-024", "supporting_rows": [416, 422, 424, 430]}
+{"scenario_id": "v03-025", "supporting_rows": [433, 434, 435, 436, 437]}
+{"scenario_id": "v03-026", "supporting_rows": [453, 460, 463, 465, 467]}
+{"scenario_id": "v03-027", "supporting_rows": [469, 470, 471, 472, 473]}
+{"scenario_id": "v03-028", "supporting_rows": [490, 491, 493, 495, 499]}
+{"scenario_id": "v03-029", "supporting_rows": [505, 506, 507, 508, 509]}
+{"scenario_id": "v03-030", "supporting_rows": [524, 525, 527, 528, 540]}
+{"scenario_id": "v03-031", "supporting_rows": [541, 542, 543, 544, 545, 546, 547]}
+{"scenario_id": "v03-032", "supporting_rows": [562, 563, 565, 566, 568, 571, 574]}
+{"scenario_id": "v03-033", "supporting_rows": [577, 578, 579, 580, 581, 582, 583]}
+{"scenario_id": "v03-034", "supporting_rows": [596, 598, 599, 602, 604, 606, 609]}
+{"scenario_id": "v03-035", "supporting_rows": [613, 614, 615, 616, 617, 618, 619]}
+{"scenario_id": "v03-036", "supporting_rows": [634, 635, 638, 643, 645, 646, 648]}
+{"scenario_id": "v03-037", "supporting_rows": [649, 655]}
+{"scenario_id": "v03-038", "supporting_rows": [670, 673]}
+{"scenario_id": "v03-039", "supporting_rows": [685, 691]}
+{"scenario_id": "v03-040", "supporting_rows": [703, 707]}
+{"scenario_id": "v03-041", "supporting_rows": [721, 727]}
+{"scenario_id": "v03-042", "supporting_rows": [739, 748]}
+{"scenario_id": "v03-043", "supporting_rows": [757, 758, 759, 760, 761, 762, 763]}
+{"scenario_id": "v03-044", "supporting_rows": [780, 781, 782, 784, 785, 786, 787]}
+{"scenario_id": "v03-045", "supporting_rows": [793, 794, 795, 796, 797, 798, 799]}
+{"scenario_id": "v03-046", "supporting_rows": [811, 813, 815, 817, 820, 825, 826]}
+{"scenario_id": "v03-047", "supporting_rows": [829, 830, 831, 832, 833, 834, 835]}
+{"scenario_id": "v03-048", "supporting_rows": [850, 851, 854, 855, 857, 858, 863]}
+{"scenario_id": "v03-049", "supporting_rows": [865, 866, 867, 868, 869, 870, 871]}
+{"scenario_id": "v03-050", "supporting_rows": [883, 888, 889, 894, 895, 896, 900]}
+{"scenario_id": "v03-051", "supporting_rows": [901, 902, 903, 904, 905, 906, 907]}
+{"scenario_id": "v03-052", "supporting_rows": [920, 921, 924, 925, 930, 932, 933]}
+{"scenario_id": "v03-053", "supporting_rows": [937, 938, 939, 940, 941, 942, 943]}
+{"scenario_id": "v03-054", "supporting_rows": [955, 960, 961, 963, 964, 968, 969]}
+{"scenario_id": "v03-055", "supporting_rows": [973, 974, 975, 976, 977, 978, 979]}
+{"scenario_id": "v03-056", "supporting_rows": [991, 993, 994, 997, 1001, 1005, 1008]}
+{"scenario_id": "v03-057", "supporting_rows": [1009, 1010, 1011, 1012, 1013, 1014, 1015]}
+{"scenario_id": "v03-058", "supporting_rows": [1027, 1029, 1034, 1036, 1039, 1043, 1044]}
+{"scenario_id": "v03-059", "supporting_rows": [1045, 1046, 1047, 1048, 1049, 1050, 1051]}
+{"scenario_id": "v03-060", "supporting_rows": [1063, 1064, 1068, 1071, 1073, 1075, 1077]}
+{"scenario_id": "v03-061", "supporting_rows": [1081, 1082, 1083, 1084, 1085, 1086, 1087]}
+{"scenario_id": "v03-062", "supporting_rows": [1100, 1105, 1106, 1107, 1108, 1113, 1116]}
+{"scenario_id": "v03-063", "supporting_rows": [1117, 1118, 1119, 1120, 1121, 1122, 1123]}
+{"scenario_id": "v03-064", "supporting_rows": [1135, 1137, 1141, 1147, 1149, 1150, 1152]}
+{"scenario_id": "v03-065", "supporting_rows": [1153, 1154, 1155, 1156, 1157, 1158, 1159]}
+{"scenario_id": "v03-066", "supporting_rows": [1173, 1174, 1175, 1178, 1184, 1185, 1188]}
+{"scenario_id": "v03-067", "supporting_rows": [1189, 1190, 1195]}
+{"scenario_id": "v03-068", "supporting_rows": [1207, 1210, 1212]}
+{"scenario_id": "v03-069", "supporting_rows": [1225, 1226, 1231]}
+{"scenario_id": "v03-070", "supporting_rows": [1245, 1248, 1258]}
+{"scenario_id": "v03-071", "supporting_rows": [1261, 1262, 1267]}
+{"scenario_id": "v03-072", "supporting_rows": [1279, 1280, 1285]}
+{"scenario_id": "v03-073", "supporting_rows": [1297]}
+{"scenario_id": "v03-074", "supporting_rows": [1332]}
+{"scenario_id": "v03-075", "supporting_rows": [1333]}
+{"scenario_id": "v03-076", "supporting_rows": [1366]}
+{"scenario_id": "v03-077", "supporting_rows": [1369]}
+{"scenario_id": "v03-078", "supporting_rows": [1403]}
+{"scenario_id": "v03-079", "supporting_rows": [1405]}
+{"scenario_id": "v03-080", "supporting_rows": [1435]}
+{"scenario_id": "v03-081", "supporting_rows": [1441]}
+{"scenario_id": "v03-082", "supporting_rows": [1467]}
+{"scenario_id": "v03-083", "supporting_rows": [1477]}
+{"scenario_id": "v03-084", "supporting_rows": [1502]}
+{"scenario_id": "v03-085", "supporting_rows": [1513]}
+{"scenario_id": "v03-086", "supporting_rows": [1613]}
+{"scenario_id": "v03-087", "supporting_rows": [1697]}
+{"scenario_id": "v03-088", "supporting_rows": [1868]}
+{"scenario_id": "v03-089", "supporting_rows": [1881]}
+{"scenario_id": "v03-090", "supporting_rows": [2047]}
+{"scenario_id": "v03-091", "supporting_rows": [2065]}
+{"scenario_id": "v03-092", "supporting_rows": [2092]}
+{"scenario_id": "v03-093", "supporting_rows": [2101]}
+{"scenario_id": "v03-094", "supporting_rows": [2121]}
+{"scenario_id": "v03-095", "supporting_rows": [2137]}
+{"scenario_id": "v03-096", "supporting_rows": [2161]}
+{"scenario_id": "v03-097", "supporting_rows": [2173]}
+{"scenario_id": "v03-098", "supporting_rows": [2199]}
+{"scenario_id": "v03-099", "supporting_rows": [2209]}
+{"scenario_id": "v03-100", "supporting_rows": [2233]}
+{"scenario_id": "v03-101", "supporting_rows": [2245]}
+{"scenario_id": "v03-102", "supporting_rows": [2279]}
+{"scenario_id": "v03-103", "supporting_rows": [2281, 2282, 2283, 2284, 2285]}
+{"scenario_id": "v03-104", "supporting_rows": [2299, 2302, 2303, 2308, 2315]}
+{"scenario_id": "v03-105", "supporting_rows": [2317, 2318, 2319, 2320, 2321]}
+{"scenario_id": "v03-106", "supporting_rows": [2337, 2339, 2349, 2351, 2352]}
+{"scenario_id": "v03-107", "supporting_rows": [2353, 2354, 2355, 2356, 2357]}
+{"scenario_id": "v03-108", "supporting_rows": [2371, 2374, 2375, 2383, 2384]}
+{"scenario_id": "v03-109", "supporting_rows": [2389, 2390, 2391, 2392, 2393]}
+{"scenario_id": "v03-110", "supporting_rows": [2407, 2408, 2414, 2415, 2418]}
+{"scenario_id": "v03-111", "supporting_rows": [2425, 2426, 2427, 2428, 2429]}
+{"scenario_id": "v03-112", "supporting_rows": [2443, 2446, 2450, 2451, 2455]}
+{"scenario_id": "v03-113", "supporting_rows": [2461, 2462, 2463, 2464, 2465]}
+{"scenario_id": "v03-114", "supporting_rows": [2484, 2486, 2488, 2492, 2496]}
+{"scenario_id": "v03-115", "supporting_rows": [2497]}
+{"scenario_id": "v03-116", "supporting_rows": [2610]}
+{"scenario_id": "v03-117", "supporting_rows": [2681]}
+{"scenario_id": "v03-118", "supporting_rows": [2842]}
+{"scenario_id": "v03-119", "supporting_rows": [2865]}
+{"scenario_id": "v03-120", "supporting_rows": [2986]}

@@ -1,0 +1,68 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "adjudicator_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Adjudicator Id",
+      "type": "string"
+    },
+    "cited_event_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 500,
+      "minItems": 1,
+      "title": "Cited Event Ids",
+      "type": "array"
+    },
+    "human_attestation_reference": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Human Attestation Reference",
+      "type": "string"
+    },
+    "label": {
+      "enum": [
+        "malicious",
+        "benign",
+        "needs_review"
+      ],
+      "title": "Label",
+      "type": "string"
+    },
+    "packet_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Packet Sha256",
+      "type": "string"
+    },
+    "rationale": {
+      "maxLength": 4000,
+      "minLength": 20,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "review_pair_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Review Pair Sha256",
+      "type": "string"
+    },
+    "submitted_at": {
+      "format": "date-time",
+      "title": "Submitted At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "adjudicator_id",
+    "label",
+    "packet_sha256",
+    "review_pair_sha256",
+    "rationale",
+    "cited_event_ids",
+    "human_attestation_reference",
+    "submitted_at"
+  ],
+  "title": "SubmittedAdjudication",
+  "type": "object"
+}

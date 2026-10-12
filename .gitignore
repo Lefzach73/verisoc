@@ -1,0 +1,17 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.DS_Store
+.coverage
+htmlcov/
+*.db
+*.db-*
+.env
+artifacts/
+datasets/raw/
+dist/
+*.egg-info/

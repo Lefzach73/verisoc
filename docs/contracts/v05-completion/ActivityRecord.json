@@ -1,0 +1,118 @@
+{
+  "$defs": {
+    "EventBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Canonical Sha256",
+          "type": "string"
+        },
+        "event_id": {
+          "format": "uuid",
+          "title": "Event Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "event_id",
+        "canonical_sha256"
+      ],
+      "title": "EventBinding",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "approved_at": {
+      "format": "date-time",
+      "title": "Approved At",
+      "type": "string"
+    },
+    "bindings": {
+      "items": {
+        "$ref": "#/$defs/EventBinding"
+      },
+      "maxItems": 500,
+      "minItems": 1,
+      "title": "Bindings",
+      "type": "array"
+    },
+    "dataset_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "event_source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Event Source Sha256",
+      "type": "string"
+    },
+    "host_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Host Id",
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "approved_password_reset",
+        "approved_lab_execution"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "principal_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Principal Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "activity-1.0",
+      "default": "activity-1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "approved",
+        "revoked"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "ticket_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Ticket Id",
+      "type": "string"
+    },
+    "valid_from": {
+      "format": "date-time",
+      "title": "Valid From",
+      "type": "string"
+    },
+    "valid_until": {
+      "format": "date-time",
+      "title": "Valid Until",
+      "type": "string"
+    }
+  },
+  "required": [
+    "kind",
+    "status",
+    "ticket_id",
+    "dataset_id",
+    "event_source_sha256",
+    "host_id",
+    "principal_id",
+    "approved_at",
+    "valid_from",
+    "valid_until",
+    "bindings"
+  ],
+  "title": "ActivityRecord",
+  "type": "object"
+}

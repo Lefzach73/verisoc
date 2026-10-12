@@ -1,0 +1,286 @@
+{
+  "$defs": {
+    "ContextAuthority": {
+      "additionalProperties": false,
+      "description": "Server/custodian configuration, never a model-selectable authority.",
+      "properties": {
+        "authorization_reference": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Authorization Reference",
+          "type": "string"
+        },
+        "dataset_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Dataset Id",
+          "type": "string"
+        },
+        "file_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "File Sha256",
+          "type": "string"
+        },
+        "source_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "tenant_id": {
+          "format": "uuid",
+          "title": "Tenant Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "tenant_id",
+        "dataset_id",
+        "source_id",
+        "file_sha256",
+        "authorization_reference"
+      ],
+      "title": "ContextAuthority",
+      "type": "object"
+    },
+    "ContextInput": {
+      "additionalProperties": false,
+      "properties": {
+        "authority": {
+          "$ref": "#/$defs/ContextAuthority"
+        },
+        "file": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "File",
+          "type": "string"
+        },
+        "pin_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Pin Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pin_id",
+        "file",
+        "authority"
+      ],
+      "title": "ContextInput",
+      "type": "object"
+    },
+    "InputFile": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Path",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "events",
+            "permission",
+            "power_analysis",
+            "preregistration",
+            "context"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "role"
+      ],
+      "title": "InputFile",
+      "type": "object"
+    },
+    "IntakeCase": {
+      "additionalProperties": false,
+      "properties": {
+        "author_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Author Id",
+          "type": "string"
+        },
+        "case_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Case Id",
+          "type": "string"
+        },
+        "context_pins": {
+          "default": [],
+          "items": {
+            "maxLength": 256,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 8,
+          "title": "Context Pins",
+          "type": "array"
+        },
+        "dataset_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Dataset Id",
+          "type": "string"
+        },
+        "event_file": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Event File",
+          "type": "string"
+        },
+        "family_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Family Id",
+          "type": "string"
+        },
+        "origin_incident_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Origin Incident Id",
+          "type": "string"
+        },
+        "partition": {
+          "enum": [
+            "development",
+            "calibration",
+            "holdout"
+          ],
+          "title": "Partition",
+          "type": "string"
+        },
+        "row_indexes": {
+          "items": {
+            "maximum": 5000,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "maxItems": 500,
+          "minItems": 1,
+          "title": "Row Indexes",
+          "type": "array"
+        },
+        "tenant_id": {
+          "format": "uuid",
+          "title": "Tenant Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "case_id",
+        "family_id",
+        "origin_incident_id",
+        "author_id",
+        "tenant_id",
+        "dataset_id",
+        "event_file",
+        "row_indexes",
+        "partition"
+      ],
+      "title": "IntakeCase",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "cases": {
+      "items": {
+        "$ref": "#/$defs/IntakeCase"
+      },
+      "maxItems": 500,
+      "minItems": 1,
+      "title": "Cases",
+      "type": "array"
+    },
+    "context_sources": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/ContextInput"
+      },
+      "maxItems": 500,
+      "title": "Context Sources",
+      "type": "array"
+    },
+    "custodian_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Custodian Id",
+      "type": "string"
+    },
+    "files": {
+      "items": {
+        "$ref": "#/$defs/InputFile"
+      },
+      "maxItems": 600,
+      "minItems": 2,
+      "title": "Files",
+      "type": "array"
+    },
+    "license_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "License Id",
+      "type": "string"
+    },
+    "permission_file": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Permission File",
+      "type": "string"
+    },
+    "privacy_attestation": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Privacy Attestation",
+      "type": "string"
+    },
+    "provenance": {
+      "enum": [
+        "synthetic_development",
+        "external_independent_candidate"
+      ],
+      "title": "Provenance",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "intake-1.1",
+      "enum": [
+        "intake-1.0",
+        "intake-1.1"
+      ],
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "study_id": {
+      "pattern": "^[a-z0-9-]{1,64}$",
+      "title": "Study Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "study_id",
+    "provenance",
+    "custodian_id",
+    "license_id",
+    "privacy_attestation",
+    "permission_file",
+    "files",
+    "cases"
+  ],
+  "title": "IntakeManifest",
+  "type": "object"
+}

@@ -1,0 +1,151 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "H1_rate_ratio": {
+      "default": 0.5,
+      "maximum": 0.5,
+      "minimum": 0.5,
+      "title": "H1 Rate Ratio",
+      "type": "number"
+    },
+    "H2_margin": {
+      "default": -0.05,
+      "maximum": -0.05,
+      "minimum": -0.05,
+      "title": "H2 Margin",
+      "type": "number"
+    },
+    "arms": {
+      "default": [
+        "B0",
+        "B2",
+        "B3",
+        "B3-hybrid-v0.5",
+        "deterministic-verified"
+      ],
+      "items": {
+        "enum": [
+          "B0",
+          "B2",
+          "B3",
+          "B3-hybrid-v0.5",
+          "deterministic-verified"
+        ],
+        "type": "string"
+      },
+      "title": "Arms",
+      "type": "array"
+    },
+    "bootstrap_replicates": {
+      "const": 10000,
+      "default": 10000,
+      "title": "Bootstrap Replicates",
+      "type": "integer"
+    },
+    "claims": {
+      "const": "smoke_only",
+      "default": "smoke_only",
+      "title": "Claims",
+      "type": "string"
+    },
+    "context_condition": {
+      "default": "events_only",
+      "enum": [
+        "events_only",
+        "with_context"
+      ],
+      "title": "Context Condition",
+      "type": "string"
+    },
+    "max_case_events": {
+      "const": 500,
+      "default": 500,
+      "title": "Max Case Events",
+      "type": "integer"
+    },
+    "max_selected_facts": {
+      "const": 32,
+      "default": 32,
+      "title": "Max Selected Facts",
+      "type": "integer"
+    },
+    "max_tool_calls": {
+      "const": 8,
+      "default": 8,
+      "title": "Max Tool Calls",
+      "type": "integer"
+    },
+    "maximum_fpr_upper": {
+      "default": 0.05,
+      "maximum": 0.05,
+      "minimum": 0.05,
+      "title": "Maximum Fpr Upper",
+      "type": "number"
+    },
+    "minimum_triage_coverage": {
+      "default": 0.2,
+      "maximum": 0.2,
+      "minimum": 0.2,
+      "title": "Minimum Triage Coverage",
+      "type": "number"
+    },
+    "model_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Model Id",
+      "type": "string"
+    },
+    "model_revision": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Model Revision",
+      "type": "string"
+    },
+    "prompt_version": {
+      "const": "matched-offline-1.0",
+      "default": "matched-offline-1.0",
+      "title": "Prompt Version",
+      "type": "string"
+    },
+    "provider": {
+      "const": "mock",
+      "default": "mock",
+      "title": "Provider",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "study-plan-1.1",
+      "enum": [
+        "study-plan-1.0",
+        "study-plan-1.1"
+      ],
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "seed": {
+      "const": 404,
+      "default": 404,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "study_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Study Id",
+      "type": "string"
+    },
+    "total_usd_cap": {
+      "const": 0,
+      "default": 0,
+      "title": "Total Usd Cap",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "study_id",
+    "model_id",
+    "model_revision"
+  ],
+  "title": "StudyPlan",
+  "type": "object"
+}

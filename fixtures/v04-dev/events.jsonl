@@ -1,0 +1,198 @@
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T00:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T00:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T00:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T00:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T00:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T00:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T01:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T01:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T01:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T01:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T01:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T01:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T02:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T02:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T02:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T02:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T03:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T03:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T03:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T03:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T04:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 100", "timestamp": "2027-02-01T04:01:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 200", "timestamp": "2027-02-01T04:03:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 300", "timestamp": "2027-02-01T04:05:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 400", "timestamp": "2027-02-01T04:06:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 500", "timestamp": "2027-02-01T04:08:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 500", "timestamp": "2027-02-01T05:08:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 400", "timestamp": "2027-02-01T05:06:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 300", "timestamp": "2027-02-01T05:05:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 200", "timestamp": "2027-02-01T05:03:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 100", "timestamp": "2027-02-01T05:01:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T05:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T06:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T06:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T06:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T06:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T06:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T06:00:50+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 80", "timestamp": "2027-02-01T06:01:20+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 80", "timestamp": "2027-02-01T07:01:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T07:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T07:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T07:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T07:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T07:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T07:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T08:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T08:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T08:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T08:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T08:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T08:00:50+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 80", "timestamp": "2027-02-01T08:01:20+00:00", "user": "another-user"}
+{"event_code": 4624, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 80", "timestamp": "2027-02-01T09:01:20+00:00", "user": "another-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T09:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T09:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T09:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T09:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T09:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T09:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T10:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T10:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T10:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T10:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T10:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T10:00:50+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-a", "host": "another-host", "message": "Inert development record 80", "timestamp": "2027-02-01T10:01:20+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-b", "host": "another-host", "message": "Inert development record 80", "timestamp": "2027-02-01T11:01:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T11:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T11:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T11:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T11:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T11:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T11:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T12:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T12:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T12:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T12:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T12:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T12:00:50+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T12:00:00+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T13:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T13:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T13:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T13:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T13:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T13:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T13:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T14:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T14:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T14:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T14:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T14:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T14:00:50+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record -1", "timestamp": "2027-02-01T13:59:59+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record -1", "timestamp": "2027-02-01T14:59:59+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-01T15:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-01T15:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-01T15:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-01T15:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-01T15:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-01T15:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T16:00:00+00:00", "user": "dev-user-0"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T16:00:10+00:00", "user": "dev-user-1"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T16:00:20+00:00", "user": "dev-user-2"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T16:00:30+00:00", "user": "dev-user-3"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T16:00:40+00:00", "user": "dev-user-4"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T16:00:50+00:00", "user": "dev-user-5"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T17:00:50+00:00", "user": "dev-user-5"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T17:00:40+00:00", "user": "dev-user-4"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T17:00:30+00:00", "user": "dev-user-3"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T17:00:20+00:00", "user": "dev-user-2"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T17:00:10+00:00", "user": "dev-user-1"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T17:00:00+00:00", "user": "dev-user-0"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T18:00:00+00:00", "user": "dev-user-0"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T18:00:10+00:00", "user": "dev-user-1"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T18:00:20+00:00", "user": "dev-user-2"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T18:00:30+00:00", "user": "dev-user-3"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T18:00:40+00:00", "user": "dev-user-0"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T18:00:50+00:00", "user": "dev-user-1"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T19:00:50+00:00", "user": "dev-user-1"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T19:00:40+00:00", "user": "dev-user-0"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T19:00:30+00:00", "user": "dev-user-3"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T19:00:20+00:00", "user": "dev-user-2"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T19:00:10+00:00", "user": "dev-user-1"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T19:00:00+00:00", "user": "dev-user-0"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T20:00:00+00:00", "user": "dev-user-0"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T20:00:10+00:00", "user": "dev-user-1"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T20:00:20+00:00", "user": "dev-user-2"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "src_ip": "192.0.2.2", "timestamp": "2027-02-01T20:00:30+00:00", "user": "dev-user-3"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "src_ip": "192.0.2.2", "timestamp": "2027-02-01T20:00:40+00:00", "user": "dev-user-4"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "src_ip": "192.0.2.2", "timestamp": "2027-02-01T20:00:50+00:00", "user": "dev-user-5"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "src_ip": "192.0.2.2", "timestamp": "2027-02-01T21:00:50+00:00", "user": "dev-user-5"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "src_ip": "192.0.2.2", "timestamp": "2027-02-01T21:00:40+00:00", "user": "dev-user-4"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "src_ip": "192.0.2.2", "timestamp": "2027-02-01T21:00:30+00:00", "user": "dev-user-3"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T21:00:20+00:00", "user": "dev-user-2"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T21:00:10+00:00", "user": "dev-user-1"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "src_ip": "192.0.2.1", "timestamp": "2027-02-01T21:00:00+00:00", "user": "dev-user-0"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host-0", "message": "Inert development record 0", "timestamp": "2027-02-01T22:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host-1", "message": "Inert development record 10", "timestamp": "2027-02-01T22:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host-2", "message": "Inert development record 20", "timestamp": "2027-02-01T22:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host-3", "message": "Inert development record 30", "timestamp": "2027-02-01T22:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host-4", "message": "Inert development record 40", "timestamp": "2027-02-01T22:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host-5", "message": "Inert development record 50", "timestamp": "2027-02-01T22:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host-5", "message": "Inert development record 50", "timestamp": "2027-02-01T23:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host-4", "message": "Inert development record 40", "timestamp": "2027-02-01T23:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host-3", "message": "Inert development record 30", "timestamp": "2027-02-01T23:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host-2", "message": "Inert development record 20", "timestamp": "2027-02-01T23:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host-1", "message": "Inert development record 10", "timestamp": "2027-02-01T23:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host-0", "message": "Inert development record 0", "timestamp": "2027-02-01T23:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-02T00:00:00+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-02T00:00:10+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-02T00:00:20+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-02T00:00:30+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-02T00:00:40+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-02T00:00:50+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-02T01:00:50+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-02T01:00:40+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-02T01:00:30+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-02T01:00:20+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-02T01:00:10+00:00", "user": null}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-02T01:00:00+00:00", "user": null}
+{"event_code": 4688, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "process": "lab-indicator.exe", "timestamp": "2027-02-02T02:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "process": "lab-indicator.exe", "timestamp": "2027-02-02T03:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "process": "LAB-INDICATOR.EXE", "timestamp": "2027-02-02T04:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "process": "LAB-INDICATOR.EXE", "timestamp": "2027-02-02T05:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "process": "lab-indicator.exe.backup", "timestamp": "2027-02-02T06:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "process": "lab-indicator.exe.backup", "timestamp": "2027-02-02T07:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "process": "C:\\Tools\\lab-indicator.exe", "timestamp": "2027-02-02T08:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "process": "C:\\Tools\\lab-indicator.exe", "timestamp": "2027-02-02T09:00:00+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T10:00:00+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 1", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T10:00:01+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 2", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T10:00:02+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 3", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T10:00:03+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 4", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T10:00:04+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 5", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T10:00:05+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 5", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T11:00:05+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 4", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T11:00:04+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 3", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T11:00:03+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 2", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T11:00:02+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 1", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T11:00:01+00:00", "user": "dev-user"}
+{"dst_ip": "198.51.100.1", "dst_port": 4444, "event_code": 3, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "src_ip": "192.0.2.1", "timestamp": "2027-02-02T11:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-02T12:00:00+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-02T12:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-02T12:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-02T12:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-02T12:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-02T12:00:50+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 80", "timestamp": "2027-02-02T12:01:20+00:00", "user": "dev-user"}
+{"event_code": 4624, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 80", "timestamp": "2027-02-02T13:01:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 50", "timestamp": "2027-02-02T13:00:50+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 40", "timestamp": "2027-02-02T13:00:40+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 30", "timestamp": "2027-02-02T13:00:30+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 20", "timestamp": "2027-02-02T13:00:20+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 10", "timestamp": "2027-02-02T13:00:10+00:00", "user": "dev-user"}
+{"event_code": 4625, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "timestamp": "2027-02-02T13:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-a", "host": "dev-host", "message": "Inert development record 0", "process": "lab-indicator.exe", "timestamp": "2027-02-02T14:00:00+00:00", "user": "dev-user"}
+{"event_code": 4688, "fixture_tenant": "demo-b", "host": "dev-host", "message": "Inert development record 0", "process": "lab-indicator.exe", "timestamp": "2027-02-02T15:00:00+00:00", "user": "dev-user"}

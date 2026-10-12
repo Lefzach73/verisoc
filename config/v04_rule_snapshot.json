@@ -1,0 +1,132 @@
+{
+  "ruleset": "evidence-1.1",
+  "threshold_basis": "Five events / 300 seconds inherited from native v0.3, not fitted on cohort labels. Distinct count five is a development hypothesis, not a production threshold.",
+  "rules": [
+    {
+      "rule_id": "record-observation",
+      "version": "1.0",
+      "predicate": "observed_event",
+      "semantics": "observation",
+      "required_fields": [
+        "event_code",
+        "occurred_at"
+      ],
+      "group_by": [
+        "tenant_id",
+        "event_id"
+      ],
+      "window_seconds": 0,
+      "minimum_count": 1,
+      "minimum_distinct_users": 1,
+      "priority": 0,
+      "proves_intent": false
+    },
+    {
+      "rule_id": "auth-failure-count",
+      "version": "1.0",
+      "predicate": "failed_login_burst",
+      "semantics": "event_count",
+      "required_fields": [
+        "event_code",
+        "host_id",
+        "user_id",
+        "occurred_at"
+      ],
+      "group_by": [
+        "tenant_id",
+        "host_id",
+        "user_id"
+      ],
+      "window_seconds": 300,
+      "minimum_count": 5,
+      "minimum_distinct_users": 1,
+      "priority": 1,
+      "proves_intent": false
+    },
+    {
+      "rule_id": "host-account-failure-count",
+      "version": "1.0",
+      "predicate": "multi_account_failures",
+      "semantics": "value_count",
+      "required_fields": [
+        "event_code",
+        "host_id",
+        "user_id",
+        "occurred_at"
+      ],
+      "group_by": [
+        "tenant_id",
+        "host_id"
+      ],
+      "window_seconds": 300,
+      "minimum_count": 5,
+      "minimum_distinct_users": 5,
+      "priority": 1,
+      "proves_intent": false
+    },
+    {
+      "rule_id": "source-account-failure-count",
+      "version": "1.0",
+      "predicate": "source_account_failures",
+      "semantics": "value_count",
+      "required_fields": [
+        "event_code",
+        "host_id",
+        "user_id",
+        "src_ip",
+        "occurred_at"
+      ],
+      "group_by": [
+        "tenant_id",
+        "host_id",
+        "src_ip"
+      ],
+      "window_seconds": 300,
+      "minimum_count": 5,
+      "minimum_distinct_users": 5,
+      "priority": 1,
+      "proves_intent": false
+    },
+    {
+      "rule_id": "ordered-auth-sequence",
+      "version": "1.0",
+      "predicate": "success_after_failures",
+      "semantics": "temporal_ordered",
+      "required_fields": [
+        "event_code",
+        "host_id",
+        "user_id",
+        "occurred_at"
+      ],
+      "group_by": [
+        "tenant_id",
+        "host_id",
+        "user_id"
+      ],
+      "window_seconds": 300,
+      "minimum_count": 5,
+      "minimum_distinct_users": 1,
+      "priority": 2,
+      "proves_intent": false
+    },
+    {
+      "rule_id": "windows-lab-image",
+      "version": "1.0",
+      "predicate": "windows_image_match",
+      "semantics": "field_match",
+      "required_fields": [
+        "event_code",
+        "process_name"
+      ],
+      "group_by": [
+        "tenant_id",
+        "host_id"
+      ],
+      "window_seconds": 0,
+      "minimum_count": 1,
+      "minimum_distinct_users": 1,
+      "priority": 2,
+      "proves_intent": false
+    }
+  ]
+}

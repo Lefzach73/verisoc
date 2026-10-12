@@ -1,0 +1,88 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "alert_id": {
+      "format": "uuid",
+      "title": "Alert Id",
+      "type": "string"
+    },
+    "dataset_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "end_at": {
+      "format": "date-time",
+      "title": "End At",
+      "type": "string"
+    },
+    "event_ids": {
+      "items": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "maxItems": 500,
+      "minItems": 1,
+      "title": "Event Ids",
+      "type": "array"
+    },
+    "rule_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Rule Id",
+      "type": "string"
+    },
+    "rule_version": {
+      "default": "native-1.0",
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Rule Version",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "start_at": {
+      "format": "date-time",
+      "title": "Start At",
+      "type": "string"
+    },
+    "tenant_id": {
+      "format": "uuid",
+      "title": "Tenant Id",
+      "type": "string"
+    },
+    "title": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "alert_id",
+    "tenant_id",
+    "dataset_id",
+    "rule_id",
+    "title",
+    "severity",
+    "event_ids",
+    "start_at",
+    "end_at"
+  ],
+  "title": "Alert",
+  "type": "object"
+}

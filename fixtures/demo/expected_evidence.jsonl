@@ -1,0 +1,24 @@
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-01", "supporting_rows": [1, 2, 3, 4, 5, 6], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-02", "supporting_rows": [21, 22, 23, 24, 25, 26, 27], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-03", "supporting_rows": [41], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-04", "supporting_rows": [], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-05", "supporting_rows": [], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-06", "supporting_rows": [101, 102, 103, 104, 105, 106, 107], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-07", "supporting_rows": [], "uncertainty": true}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-08", "supporting_rows": [160, 159, 158, 157, 156, 155, 154], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-09", "supporting_rows": [], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-10", "supporting_rows": [], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-11", "supporting_rows": [201, 202, 203, 204, 205, 206], "uncertainty": true}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-a-12", "supporting_rows": [221, 222, 223, 224, 225, 226, 227], "uncertainty": true}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-01", "supporting_rows": [241, 242, 243, 244, 245, 246], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-02", "supporting_rows": [261, 262, 263, 264, 265, 266, 267], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-03", "supporting_rows": [281], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-04", "supporting_rows": [], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-05", "supporting_rows": [], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-06", "supporting_rows": [341, 342, 343, 344, 345, 346, 347], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-07", "supporting_rows": [], "uncertainty": true}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-08", "supporting_rows": [400, 399, 398, 397, 396, 395, 394], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-09", "supporting_rows": [], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-10", "supporting_rows": [], "uncertainty": false}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-11", "supporting_rows": [441, 442, 443, 444, 445, 446], "uncertainty": true}
+{"provenance": "explicit_scenario_annotations", "scenario_id": "demo-b-12", "supporting_rows": [461, 462, 463, 464, 465, 466, 467], "uncertainty": true}

@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>VeriSOC independent adjudication</title>
+<style>body{font:16px system-ui;max-width:900px;margin:40px auto;padding:20px}section{border-top:1px solid #aaa;margin:24px 0;padding:20px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f2f5f6;padding:12px}textarea{display:block;width:98%;height:110px;margin:12px 0}input{width:96%;padding:6px}label{display:block;margin:12px 0}button{padding:12px}</style>
+<h1>Independent disagreement adjudication</h1>
+<p>Review the source evidence and both original judgments. No model predictions are supplied. Keep the original reviews unchanged. Human identity and independence require external verification.</p>
+<label>Independent adjudicator ID <input id="person"></label>
+<label>Human identity / independence attestation reference <input id="attestation"></label>
+<main id="cases"></main><button id="download">Download adjudications</button><p id="error" role="alert"></p>
+<script>
+const data=JSON.parse(atob('PAYLOAD'));
+for(const p of data.cases){
+ const section=document.createElement('section');section.dataset.id=p.blinded_case_id;
+ const h=document.createElement('h2');h.textContent='Case '+p.blinded_case_id;section.append(h);
+ const details=document.createElement('details'),summary=document.createElement('summary');
+ summary.textContent='Source evidence and original judgments';details.append(summary);
+ const pre=document.createElement('pre');pre.textContent=JSON.stringify(p,null,2);details.append(pre);section.append(details);
+ const label=document.createElement('label');label.textContent='Judgment ';
+ const select=document.createElement('select');
+ for(const name of ['','malicious','benign','needs_review']){const o=document.createElement('option');o.value=name;o.textContent=name||'Choose a judgment';select.append(o)}
+ label.append(select);section.append(label);
+ const rationale=document.createElement('textarea');rationale.setAttribute('aria-label','Adjudication rationale');rationale.placeholder='Explain the evidence and resolution, at least 20 characters';section.append(rationale);
+ const cites=document.createElement('input');cites.setAttribute('aria-label','Evidence citations');cites.placeholder='Cited event or context IDs, comma separated';section.append(cites);
+ document.getElementById('cases').append(section);
+}
+document.getElementById('download').onclick=()=>{try{
+ const person=document.getElementById('person').value.trim(),attestation=document.getElementById('attestation').value.trim();
+ if(!person||!attestation)throw Error('Complete adjudicator and attestation fields.');
+ const result={};
+ for(const section of document.querySelectorAll('section')){
+  const p=data.cases.find(x=>x.blinded_case_id===section.dataset.id);
+  const label=section.querySelector('select').value,rationale=section.querySelector('textarea').value.trim();
+  const ids=section.querySelector('input').value.split(',').map(x=>x.trim()).filter(Boolean);
+  if(!label||rationale.length<20||!ids.length)throw Error('Complete every judgment, rationale and citation.');
+  result[p.blinded_case_id]={adjudicator_id:person,label,rationale,cited_event_ids:ids,human_attestation_reference:attestation,
+   packet_sha256:data.packet_sha256,review_pair_sha256:p.review_pair_sha256,submitted_at:new Date().toISOString()};
+ }
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'}));a.download='adjudications.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}catch(e){document.getElementById('error').textContent=e.message}};
+</script></html>

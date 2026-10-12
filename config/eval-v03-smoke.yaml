@@ -1,0 +1,28 @@
+schema_version: '1.0'
+seed: 20261012
+fixture: fixtures/v03/events.jsonl
+labels: fixtures/v03/cases.jsonl
+evidence: fixtures/v03/expected_evidence.jsonl
+arms:
+- B0
+- B1
+- B2
+- B3
+ablations: []
+partition: test
+budget:
+  max_input_tokens: 16384
+  max_output_tokens: 2048
+  max_tool_calls: 8
+  max_model_calls: 2
+  max_seconds: 10
+  max_usd: 0
+split_manifest: config/splits-v03.json
+split_strategy: frozen
+paired_proposals: true
+scenario_ids:
+- v03-001
+- v03-013
+- v03-079
+- v03-085
+- v03-109

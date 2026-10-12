@@ -1,0 +1,305 @@
+{
+  "$defs": {
+    "EvidenceHash": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Canonical Sha256",
+          "type": "string"
+        },
+        "event_id": {
+          "format": "uuid",
+          "title": "Event Id",
+          "type": "string"
+        },
+        "file_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "File Sha256",
+          "type": "string"
+        },
+        "raw_row_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Raw Row Sha256",
+          "type": "string"
+        },
+        "row_index": {
+          "maximum": 5000,
+          "minimum": 1,
+          "title": "Row Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "event_id",
+        "canonical_sha256",
+        "raw_row_sha256",
+        "file_sha256",
+        "row_index"
+      ],
+      "title": "EvidenceHash",
+      "type": "object"
+    },
+    "FactArguments": {
+      "additionalProperties": false,
+      "properties": {
+        "distinct_users": {
+          "anyOf": [
+            {
+              "maximum": 500,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Distinct Users"
+        },
+        "dst_ip": {
+          "anyOf": [
+            {
+              "format": "ipvanyaddress",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dst Ip"
+        },
+        "dst_port": {
+          "anyOf": [
+            {
+              "maximum": 65535,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dst Port"
+        },
+        "end_at": {
+          "format": "date-time",
+          "title": "End At",
+          "type": "string"
+        },
+        "event_code": {
+          "anyOf": [
+            {
+              "enum": [
+                4624,
+                4625,
+                4688,
+                3
+              ],
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Event Code"
+        },
+        "event_count": {
+          "maximum": 500,
+          "minimum": 1,
+          "title": "Event Count",
+          "type": "integer"
+        },
+        "host_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Host Id"
+        },
+        "outcome": {
+          "anyOf": [
+            {
+              "enum": [
+                "success",
+                "failure",
+                "unknown"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Outcome"
+        },
+        "process_name": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Process Name"
+        },
+        "src_ip": {
+          "anyOf": [
+            {
+              "format": "ipvanyaddress",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Src Ip"
+        },
+        "start_at": {
+          "format": "date-time",
+          "title": "Start At",
+          "type": "string"
+        },
+        "user_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "User Id"
+        }
+      },
+      "required": [
+        "start_at",
+        "end_at",
+        "event_count"
+      ],
+      "title": "FactArguments",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "arguments": {
+      "$ref": "#/$defs/FactArguments"
+    },
+    "case_id": {
+      "format": "uuid",
+      "title": "Case Id",
+      "type": "string"
+    },
+    "dataset_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "derivation_rule_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Derivation Rule Id",
+      "type": "string"
+    },
+    "derivation_rule_version": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Derivation Rule Version",
+      "type": "string"
+    },
+    "evidence_hashes": {
+      "items": {
+        "$ref": "#/$defs/EvidenceHash"
+      },
+      "maxItems": 500,
+      "minItems": 1,
+      "title": "Evidence Hashes",
+      "type": "array"
+    },
+    "fact_id": {
+      "format": "uuid",
+      "title": "Fact Id",
+      "type": "string"
+    },
+    "input_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Input Hash",
+      "type": "string"
+    },
+    "predicate": {
+      "enum": [
+        "observed_event",
+        "failed_login_burst",
+        "multi_account_failures",
+        "source_account_failures",
+        "success_after_failures",
+        "windows_image_match"
+      ],
+      "title": "Predicate",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "facts-1.0",
+      "default": "facts-1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_event_ids": {
+      "items": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "maxItems": 500,
+      "minItems": 1,
+      "title": "Source Event Ids",
+      "type": "array"
+    },
+    "tenant_id": {
+      "format": "uuid",
+      "title": "Tenant Id",
+      "type": "string"
+    },
+    "verification_status": {
+      "const": "verified",
+      "default": "verified",
+      "title": "Verification Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "fact_id",
+    "tenant_id",
+    "case_id",
+    "dataset_id",
+    "predicate",
+    "arguments",
+    "source_event_ids",
+    "derivation_rule_id",
+    "derivation_rule_version",
+    "evidence_hashes",
+    "input_hash"
+  ],
+  "title": "VerifiedFact",
+  "type": "object"
+}

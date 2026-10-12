@@ -1,0 +1,43 @@
+{
+  "additionalProperties": false,
+  "description": "Server/custodian configuration, never a model-selectable authority.",
+  "properties": {
+    "authorization_reference": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Authorization Reference",
+      "type": "string"
+    },
+    "dataset_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "file_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "File Sha256",
+      "type": "string"
+    },
+    "source_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Source Id",
+      "type": "string"
+    },
+    "tenant_id": {
+      "format": "uuid",
+      "title": "Tenant Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "tenant_id",
+    "dataset_id",
+    "source_id",
+    "file_sha256",
+    "authorization_reference"
+  ],
+  "title": "ContextAuthority",
+  "type": "object"
+}

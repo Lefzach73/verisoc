@@ -1,0 +1,24 @@
+schema_version: '1.0'
+seed: 20261011
+fixture: fixtures/demo/events.jsonl
+labels: fixtures/demo/cases.jsonl
+evidence: fixtures/demo/expected_evidence.jsonl
+split_manifest: config/splits-smoke.json
+arms: [B0, B1, B2, B3]
+ablations: [minus-verifier, minus-evidence-selection, minus-abstention, minus-correlation]
+partition: test
+budget:
+  max_input_tokens: 65536
+  max_output_tokens: 2048
+  max_tool_calls: 8
+  max_model_calls: 2
+  max_seconds: 30
+  max_usd: 0
+adapter:
+  endpoint: http://127.0.0.1:8080/v1
+  model: USER_MUST_CHOOSE_PINNED_MODEL
+  allow_network: false
+  allow_hosted: false
+  input_usd_per_million: 0
+  output_usd_per_million: 0
+  price_snapshot: user-configured-local-zero-billing

@@ -1,0 +1,42 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "abstention_reason": {
+      "anyOf": [
+        {
+          "enum": [
+            "no_signal",
+            "insufficient_evidence",
+            "model_uncertainty"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Abstention Reason"
+    },
+    "fact_ids": {
+      "items": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "maxItems": 32,
+      "title": "Fact Ids",
+      "type": "array"
+    },
+    "observation": {
+      "default": "",
+      "maxLength": 1000,
+      "title": "Observation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "fact_ids"
+  ],
+  "title": "FactSelection",
+  "type": "object"
+}

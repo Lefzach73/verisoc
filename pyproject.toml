@@ -1,0 +1,72 @@
+[project]
+name = "verisoc"
+version = "0.4.0"
+description = "Offline-first evidence-verified security triage research prototype"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+dependencies = [
+    "fastapi==0.143.0",
+    "filelock==4.1.1",
+    "httpx==0.28.1",
+    "psycopg[binary]==3.3.6",
+    "pydantic==2.14.1",
+    "pyjwt==2.15.1",
+    "pyyaml==6.0.3",
+    "sqlalchemy==2.1.4",
+    "typer==0.27.3",
+    "uvicorn==0.54.0",
+]
+
+[project.scripts]
+verisoc = "verisoc.cli:main"
+
+[project.optional-dependencies]
+sigma = [
+    "pysigma==0.11.23",
+]
+evtx = [
+    "defusedxml==0.7.1",
+    "python-evtx==0.8.1",
+]
+analysis = [
+    "matplotlib==3.11.2",
+]
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/verisoc"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src/verisoc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["postgres: real PostgreSQL RLS integration (explicit opt-in)"]
+
+[dependency-groups]
+dev = [
+    "hypothesis==6.169.0",
+    "mypy==2.4.0",
+    "pip-audit==2.10.1",
+    "pytest==9.1.1",
+    "pytest-cov==7.1.0",
+    "ruff==0.17.0",
+    "types-defusedxml==0.7.0.20260504",
+    "types-pyyaml==6.0.12.20260906",
+]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { file = "src/**/*.py" }, { file = "README.md" }, { file = "LICENSE" }]

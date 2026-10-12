@@ -1,0 +1,212 @@
+{
+  "$defs": {
+    "CandidateClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "format": "uuid",
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "claim_kind": {
+          "enum": [
+            "observed_process",
+            "observed_login_failure",
+            "observed_login_success",
+            "observed_network_connection",
+            "shared_host",
+            "shared_user",
+            "temporal_order",
+            "analyst_inference"
+          ],
+          "title": "Claim Kind",
+          "type": "string"
+        },
+        "explanation": {
+          "default": "",
+          "maxLength": 1024,
+          "title": "Explanation",
+          "type": "string"
+        },
+        "parameters": {
+          "$ref": "#/$defs/PredicateArgs"
+        },
+        "subject_event_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Subject Event Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "claim_id",
+        "claim_kind",
+        "subject_event_ids"
+      ],
+      "title": "CandidateClaim",
+      "type": "object"
+    },
+    "PredicateArgs": {
+      "additionalProperties": false,
+      "properties": {
+        "dst_ip": {
+          "anyOf": [
+            {
+              "format": "ipvanyaddress",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dst Ip"
+        },
+        "dst_port": {
+          "anyOf": [
+            {
+              "maximum": 65535,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dst Port"
+        },
+        "end_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End At"
+        },
+        "host_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Host Id"
+        },
+        "process_name": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Process Name"
+        },
+        "src_ip": {
+          "anyOf": [
+            {
+              "format": "ipvanyaddress",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Src Ip"
+        },
+        "start_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start At"
+        },
+        "user_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "User Id"
+        }
+      },
+      "title": "PredicateArgs",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "candidate": {
+      "$ref": "#/$defs/CandidateClaim"
+    },
+    "reason_code": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Reason Code",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "verified",
+        "rejected",
+        "insufficient"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "supporting_event_ids": {
+      "items": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "title": "Supporting Event Ids",
+      "type": "array"
+    },
+    "verifier_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Verifier Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "candidate",
+    "status",
+    "verifier_id",
+    "supporting_event_ids",
+    "reason_code"
+  ],
+  "title": "VerifiedClaim",
+  "type": "object"
+}

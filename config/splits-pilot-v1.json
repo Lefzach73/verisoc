@@ -1,0 +1,39 @@
+{
+  "fixture_sha256": "6a7747caf6f52f4f20d6a32f730934c62129b9d48c347030d9a8681688e50cfe",
+  "grouping": "Prospective synthetic pilot: grouped families with malicious and benign test cases; no model results seen",
+  "labels_sha256": "7d635e4a4f441134c5172c0a23128b27742508b35ff6d53160d446cf23c4ce17",
+  "schema_version": "1.0",
+  "seed": 20261011,
+  "splits": {
+    "dev": [
+      "demo-a-07",
+      "demo-b-07"
+    ],
+    "test": [
+      "demo-a-03",
+      "demo-a-04",
+      "demo-a-10",
+      "demo-b-03",
+      "demo-b-04",
+      "demo-b-10"
+    ],
+    "train": [
+      "demo-a-01",
+      "demo-a-02",
+      "demo-a-05",
+      "demo-a-06",
+      "demo-a-08",
+      "demo-a-09",
+      "demo-a-11",
+      "demo-a-12",
+      "demo-b-01",
+      "demo-b-02",
+      "demo-b-05",
+      "demo-b-06",
+      "demo-b-08",
+      "demo-b-09",
+      "demo-b-11",
+      "demo-b-12"
+    ]
+  }
+}

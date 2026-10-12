@@ -1,0 +1,28 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "dataset_id": {
+      "default": "demo",
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "end_at": {
+      "format": "date-time",
+      "title": "End At",
+      "type": "string"
+    },
+    "start_at": {
+      "format": "date-time",
+      "title": "Start At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "start_at",
+    "end_at"
+  ],
+  "title": "CaseWindow",
+  "type": "object"
+}

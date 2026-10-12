@@ -1,0 +1,12 @@
+title: VeriSOC inert laboratory process indicator
+id: 93d8bfa4-c51b-409e-afd2-5c8a7e09918b
+status: experimental
+description: Original MIT synthetic rule. A process-name observation does not establish intent.
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    process_name: lab-indicator.exe
+  condition: selection
+level: high

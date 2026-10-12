@@ -1,0 +1,15 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "format": "uuid",
+      "title": "Case Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "case_id"
+  ],
+  "title": "CaseArgs",
+  "type": "object"
+}

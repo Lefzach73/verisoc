@@ -1,0 +1,51 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "format": "uuid",
+      "title": "Case Id",
+      "type": "string"
+    },
+    "end": {
+      "format": "date-time",
+      "title": "End",
+      "type": "string"
+    },
+    "limit": {
+      "default": 32,
+      "maximum": 64,
+      "minimum": 1,
+      "title": "Limit",
+      "type": "integer"
+    },
+    "source_kind": {
+      "anyOf": [
+        {
+          "enum": [
+            "windows_auth",
+            "windows_process",
+            "network_flow"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Kind"
+    },
+    "start": {
+      "format": "date-time",
+      "title": "Start",
+      "type": "string"
+    }
+  },
+  "required": [
+    "case_id",
+    "start",
+    "end"
+  ],
+  "title": "SearchArgs",
+  "type": "object"
+}

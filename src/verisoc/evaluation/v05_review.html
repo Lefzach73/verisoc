@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>VeriSOC blinded human review</title><style>body{font:16px system-ui;max-width:900px;margin:40px auto;padding:20px}section{border-top:1px solid #aaa;padding:24px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f5f7;padding:12px}textarea{width:100%;min-height:100px}label{display:block;margin:12px 0}button{padding:12px}input{max-width:95%}</style>
+<h1>Blinded evidence review</h1><p>No system predictions or gold labels are included. Inspect the evidence, cite event IDs, record uncertainty, and submit your own judgment. A form is not a human signoff.</p>
+<p id="identity"></p><main id="cases"></main><label>Human identity/independence attestation reference <input id="attestation" required></label>
+<label><input id="blind" type="checkbox">I have not seen model outputs for these cases.</label>
+<label><input id="independent" type="checkbox">I am independent of the case authors.</label>
+<button id="download">Download my reviews</button><p id="error" role="alert"></p><script>
+const d=JSON.parse(atob('PAYLOAD'));
+document.getElementById('identity').textContent='Assigned reviewer: '+d.reviewer_id;
+for(const p of d.packets){const s=document.createElement('section');s.dataset.id=p.blinded_case_id;
+const h=document.createElement('h2');h.textContent='Case '+p.blinded_case_id;s.append(h);
+const detail=document.createElement('details');const summary=document.createElement('summary');summary.textContent='Show '+p.evidence.length+' source records';detail.append(summary);
+const pre=document.createElement('pre');pre.textContent=JSON.stringify({events:p.evidence,recorded_context:p.recorded_context||[]},null,2);detail.append(pre);s.append(detail);
+const label=document.createElement('label');label.textContent='Decision ';
+const select=document.createElement('select');for(const value of ['', 'malicious','benign','needs_review']){const o=document.createElement('option');o.value=value;o.textContent=value||'Choose a judgment';select.append(o)}label.append(select);s.append(label);
+const rationale=document.createElement('textarea');rationale.placeholder='Evidence-based rationale (at least 20 characters)';rationale.setAttribute('aria-label','Rationale');s.append(rationale);
+const cites=document.createElement('input');cites.placeholder='Cited evidence IDs, comma separated';cites.setAttribute('aria-label','Evidence citations');s.append(cites);document.getElementById('cases').append(s)}
+document.getElementById('download').onclick=()=>{try{const att=document.getElementById('attestation').value.trim();if(!att||!document.getElementById('blind').checked||!document.getElementById('independent').checked)throw Error('Complete human attestations.');
+const reviews=[...document.querySelectorAll('section')].map(s=>{const label=s.querySelector('select').value,rationale=s.querySelector('textarea').value.trim(),ids=s.querySelector('input').value.split(',').map(x=>x.trim()).filter(Boolean);if(!label||rationale.length<20||!ids.length)throw Error('Complete every decision, rationale and citation.');return {blinded_case_id:s.dataset.id,reviewer_id:d.reviewer_id,packet_sha256:d.packet_sha256,label,rationale,cited_event_ids:ids,blind_to_outputs:true,independent_of_authors:true,human_attestation_reference:att,submitted_at:new Date().toISOString()}});
+const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(reviews,null,2)],{type:'application/json'}));a.download='reviews.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}catch(e){document.getElementById('error').textContent=e.message}};
+</script></html>

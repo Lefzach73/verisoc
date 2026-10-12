@@ -1,0 +1,486 @@
+{
+  "$defs": {
+    "CandidateClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "format": "uuid",
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "claim_kind": {
+          "enum": [
+            "observed_process",
+            "observed_login_failure",
+            "observed_login_success",
+            "observed_network_connection",
+            "shared_host",
+            "shared_user",
+            "temporal_order",
+            "analyst_inference"
+          ],
+          "title": "Claim Kind",
+          "type": "string"
+        },
+        "explanation": {
+          "default": "",
+          "maxLength": 1024,
+          "title": "Explanation",
+          "type": "string"
+        },
+        "parameters": {
+          "$ref": "#/$defs/PredicateArgs"
+        },
+        "subject_event_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Subject Event Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "claim_id",
+        "claim_kind",
+        "subject_event_ids"
+      ],
+      "title": "CandidateClaim",
+      "type": "object"
+    },
+    "EvidenceDetail": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Canonical Sha256",
+          "type": "string"
+        },
+        "dst_port": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dst Port"
+        },
+        "event_id": {
+          "format": "uuid",
+          "title": "Event Id",
+          "type": "string"
+        },
+        "host_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Host Id"
+        },
+        "occurred_at": {
+          "format": "date-time",
+          "title": "Occurred At",
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "success",
+            "failure",
+            "unknown"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "process_name": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Process Name"
+        },
+        "source_kind": {
+          "enum": [
+            "windows_auth",
+            "windows_process",
+            "network_flow"
+          ],
+          "title": "Source Kind",
+          "type": "string"
+        },
+        "source_ref": {
+          "$ref": "#/$defs/SourceRef"
+        },
+        "user_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "User Id"
+        }
+      },
+      "required": [
+        "event_id",
+        "occurred_at",
+        "source_kind",
+        "outcome",
+        "source_ref",
+        "canonical_sha256"
+      ],
+      "title": "EvidenceDetail",
+      "type": "object"
+    },
+    "PredicateArgs": {
+      "additionalProperties": false,
+      "properties": {
+        "dst_ip": {
+          "anyOf": [
+            {
+              "format": "ipvanyaddress",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dst Ip"
+        },
+        "dst_port": {
+          "anyOf": [
+            {
+              "maximum": 65535,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dst Port"
+        },
+        "end_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End At"
+        },
+        "host_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Host Id"
+        },
+        "process_name": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Process Name"
+        },
+        "src_ip": {
+          "anyOf": [
+            {
+              "format": "ipvanyaddress",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Src Ip"
+        },
+        "start_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start At"
+        },
+        "user_id": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "User Id"
+        }
+      },
+      "title": "PredicateArgs",
+      "type": "object"
+    },
+    "SourceRef": {
+      "additionalProperties": false,
+      "properties": {
+        "file_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "File Sha256",
+          "type": "string"
+        },
+        "raw_row_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Raw Row Sha256",
+          "type": "string"
+        },
+        "row_index": {
+          "maximum": 5000,
+          "minimum": 1,
+          "title": "Row Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "file_sha256",
+        "row_index",
+        "raw_row_sha256"
+      ],
+      "title": "SourceRef",
+      "type": "object"
+    },
+    "VerifiedClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate": {
+          "$ref": "#/$defs/CandidateClaim"
+        },
+        "reason_code": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Reason Code",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "verified",
+            "rejected",
+            "insufficient"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "supporting_event_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "title": "Supporting Event Ids",
+          "type": "array"
+        },
+        "verifier_id": {
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Verifier Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidate",
+        "status",
+        "verifier_id",
+        "supporting_event_ids",
+        "reason_code"
+      ],
+      "title": "VerifiedClaim",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "format": "uuid",
+      "title": "Case Id",
+      "type": "string"
+    },
+    "estimated_usd": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Estimated Usd",
+      "type": "number"
+    },
+    "evidence_details": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/EvidenceDetail"
+      },
+      "title": "Evidence Details",
+      "type": "array"
+    },
+    "evidence_refs": {
+      "items": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "title": "Evidence Refs",
+      "type": "array"
+    },
+    "hypotheses": {
+      "items": {
+        "$ref": "#/$defs/CandidateClaim"
+      },
+      "title": "Hypotheses",
+      "type": "array"
+    },
+    "limit_reasons": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Limit Reasons",
+      "type": "array"
+    },
+    "missing_evidence": {
+      "items": {
+        "maxLength": 256,
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Missing Evidence",
+      "type": "array"
+    },
+    "model_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Model Id",
+      "type": "string"
+    },
+    "provider_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Provider Id",
+      "type": "string"
+    },
+    "report_id": {
+      "format": "uuid",
+      "title": "Report Id",
+      "type": "string"
+    },
+    "run_manifest_id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Run Manifest Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "tenant_id": {
+      "format": "uuid",
+      "title": "Tenant Id",
+      "type": "string"
+    },
+    "tokens_input": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Tokens Input",
+      "type": "integer"
+    },
+    "tokens_output": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Tokens Output",
+      "type": "integer"
+    },
+    "total_duration_ms": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Total Duration Ms",
+      "type": "number"
+    },
+    "verdict": {
+      "enum": [
+        "malicious",
+        "benign",
+        "needs_review"
+      ],
+      "title": "Verdict",
+      "type": "string"
+    },
+    "verified_claims": {
+      "items": {
+        "$ref": "#/$defs/VerifiedClaim"
+      },
+      "title": "Verified Claims",
+      "type": "array"
+    }
+  },
+  "required": [
+    "report_id",
+    "case_id",
+    "tenant_id",
+    "verdict",
+    "verified_claims",
+    "hypotheses",
+    "missing_evidence",
+    "limit_reasons",
+    "evidence_refs",
+    "run_manifest_id",
+    "provider_id",
+    "model_id"
+  ],
+  "title": "InvestigationReport",
+  "type": "object"
+}

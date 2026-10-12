@@ -1,0 +1,14 @@
+schema_version: '1.0'
+dataset_id: example-not-approved
+source_url: https://example.invalid/pinned-revision/events.jsonl
+source_commit: '0000000000000000000000000000000000000000'
+sha256: '0000000000000000000000000000000000000000000000000000000000000000'
+license_spdx: MIT
+license_url: https://example.invalid/LICENSE
+attribution: Example placeholder only; no data availability asserted
+audit_status: pending
+reviewer: ''
+reviewed_on: ''
+discrepancy: true
+resolution_evidence: ''
+format: verisoc-jsonl-v1

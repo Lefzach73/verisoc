@@ -1,0 +1,38 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "format": "uuid",
+      "title": "Case Id",
+      "type": "string"
+    },
+    "event_id": {
+      "format": "uuid",
+      "title": "Event Id",
+      "type": "string"
+    },
+    "limit": {
+      "default": 32,
+      "maximum": 64,
+      "minimum": 1,
+      "title": "Limit",
+      "type": "integer"
+    },
+    "relation": {
+      "enum": [
+        "host",
+        "user",
+        "ip"
+      ],
+      "title": "Relation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "case_id",
+    "event_id",
+    "relation"
+  ],
+  "title": "RelatedArgs",
+  "type": "object"
+}
